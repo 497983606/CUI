@@ -1,0 +1,599 @@
+
+/*
+* CUI (a css file)
+* author:xlchao
+* e-mail:chaoxuelei@qq.com
+* about:CUI it's easy to understand and easy to use.*/
+
+/*********************** * global param ***********************/
+	@primary:#192736;
+	@success:#00a759;
+	@warning:#f7b80e;
+	@danger:#d30000;
+    @gray:#ddd;
+
+    
+/*********************** * code start * CUI css rest ***********************/
+body,html {
+	height: 100%;
+	font:14px/1.5 arial,'宋体',"Microsoft Yahei";
+	color:#000;
+}
+h1,h2,h3,h4,h5,h6,body,html,ul,ol,li {
+	margin:0;
+	padding: 0;
+}
+a {
+	color:@primary;
+	text-decoration: none;
+}
+a:hover {
+	color:@primary;
+	text-decoration: underline;
+}
+button,input,select,textarea {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	font:14px/1.5 arial,'宋体',"Microsoft Yahei";
+}
+ol,li {
+	list-style: none
+}
+
+
+/*********************** * CUI transition ***********************/
+.c-transition {
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+}
+.btn-inset-shadow {
+	box-shadow:0 8px 18px rgba(255,255,255,.18) inset;
+}
+.input-inset-shadow {
+	box-shadow:0 1px 3px rgba(0,0,0,.08) inset;
+}
+
+
+/*********************** * CUI common style ***********************/
+.c-clear {
+	*zoom: 1;
+	&:before,&:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+	    clear: both;
+    }
+}
+.c-fl {
+	float: left
+}
+.c-fr {
+	float: right;
+}
+
+
+/*********************** * CUI flex ***********************/
+.c-row [class*=c-col] {
+	float: left
+}
+.c-row-r [class*=c-col] {
+	float: right
+}
+@width:100%;
+.c-h1 {
+	height: 100%
+}
+.c-flex {
+	display: flex;
+}
+.c-flex-center {
+	justify-content: center;
+}
+.c-flex-left {
+	justify-content: flex-start;
+}
+.c-flex-right {
+	justify-content: flex-end;
+}
+.c-flex-justify {
+	justify-content: space-between;
+}
+.c-flex-wrap {
+	flex-wrap: wrap;
+}
+.c-flex-align-c {
+	align-items: center;
+}
+.c-col12 {
+	width: @width
+}
+.c-col11 {
+	width:@width*(11/12)
+}
+.c-col10 {
+	width: @width*(10/12)
+}
+.c-col9 {
+	width: @width*(9/12)
+}
+.c-col8 {
+	width: @width*(8/12)
+}
+.c-col7 {
+	width: @width*(7/12)
+}
+.c-col6 {
+	width: @width*(6/12)
+}
+.c-col5 {
+	width: @width*(5/12)
+}
+.c-col4 {
+	width: @width*(4/12)
+}
+.c-col3 {
+	width: @width*(3/12)
+}
+.c-col2 {
+	width: @width*(2/12)
+}
+.c-col1 {
+	width: @width*(1/12)
+}
+
+
+/********************** * CUI Position **********************/
+.c-absolute {
+	position: absolute
+}
+.c-absolute-c {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.c-absolute-mc {
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.c-margin-c {
+	margin: auto
+}
+.c-margin-t5 {
+	margin-top:5px;
+}
+.c-margin-b5 {
+	margin-bottom:5px;
+}
+.c-margin-t10 {
+	margin-top:10px;
+}
+.c-margin-b10 {
+	margin-bottom:10px;
+}
+.c-margin-t15 {
+	margin-top:15px;
+}
+.c-margin-b15 {
+	margin-bottom:15px;
+}
+.c-margin-l5 {
+	margin-left:5px;
+}
+.c-margin-r5 {
+	margin-right:5px;
+}
+.c-offset12 {
+	margin-left: @width
+}
+.c-offset11 {
+	margin-left: @width*(11/12)
+}
+.c-offset10 {
+	margin-left: @width*(10/12)
+}
+.c-offset9 {
+	margin-left: @width*(9/12)
+}
+.c-offset8 {
+	margin-left: @width*(8/12)
+}
+.c-offset7 {
+	margin-left: @width*(7/12)
+}
+.c-offset6 {
+	margin-left: @width*(6/12)
+}
+.c-offset5 {
+	margin-left: @width*(5/12)
+}
+.c-offset4 {
+	margin-left: @width*(4/12)
+}
+.c-offset3 {
+	margin-left: @width*(3/12)
+}
+.c-offset2 {
+	margin-left: @width*(2/12)
+}
+.c-offset1 {
+	margin-left: @width*(1/12)
+}
+
+
+/********************** * CUI Adorn **********************/
+.c-borderB {
+	border-bottom: 1px solid @gray;
+}
+.c-borderT {
+	border-top: 1px solid @gray;
+}
+.c-borderL {
+	border-left: 1px solid @gray;
+}
+.c-borderR {
+	border-right: 1px solid @gray;
+}
+.c-border {
+	border: 1px solid @gray;
+}
+.c-textIndent-10 {
+	text-indent: 10px;
+}
+.c-textIndent-15 {
+	text-indent: 15px;
+}
+.c-textIndent-20 {
+	text-indent: 20px;
+}
+.c-font-b {
+	font-weight: bold;
+}
+.c-font-clearb {
+	font-weight: 100;
+}
+.c-text-c {
+	text-align: center
+}
+.c-text-l {
+	text-align: left
+}
+.c-text-r {
+	text-align: right
+}
+.c-bg-primary {
+	background-color: lighten(@primary,60%)!important;
+}
+.c-bg-success {
+	background-color: lighten(@success,62%) !important;
+}
+.c-bg-danger {
+	background-color: lighten(@danger,55%) !important;
+}
+
+
+/********************** * CUI Typography **********************/
+h1,.c-h1 {
+	font-size: 38px;
+}
+h2,.c-h2 {
+	font-size: 32px;
+}
+h3,.c-h3 {
+	font-size: 24px;
+}
+h4,.c-h4 {
+	font-size: 18px;
+}
+h5,.c-h5 {
+	font-size: 14px;
+}
+h6,.c-h6 {
+	font-size: 12px;
+}
+
+
+/********************** * CUI Table **********************/
+.c-table {
+	border-collapse: collapse;
+}
+.c-table td, .c-table th {
+	border: 1px solid @gray;
+	color: #666;
+	height: 30px;
+	padding: .2em 0;
+}
+.c-table thead {
+	background-color: #eee;
+	border-bottom: 2px solid @gray;
+}
+.c-table-hover tr:hover {
+	background-color: #f9f9f9;
+}
+.c-table-hover thead tr:hover {
+	background-color: #eee;
+}
+.c-table-oe tr:nth-child(2n) {
+	background-color: #f9f9f9;
+}
+.c-table-noside tr td:nth-child(1),.c-table-noside tr th:nth-child(1) {
+	border-left: none;
+}
+.c-table-noside tr td:nth-last-child(1),.c-table-noside tr th:nth-last-child(1) {
+	border-right: none;
+}
+.c-table-nocolborder tr td,.c-table-nocolborder tr th {
+	border-right: none;
+	border-left: none;
+}
+.c-table-norowborder tr td,.c-table-norowborder tr th {
+	border-bottom: none;
+	border-top: none;
+}
+
+
+/********************** * CUI form **********************/
+.c-form input:disabled,.c-form select:disabled,.c-form input[type="checkbox"]:disabled+span,.c-form input[type="radio"]:disabled+span,.c-textarea:disabled {
+	cursor: not-allowed;
+	background-color: #eee;
+}
+.c-form input,.c-input {
+	padding:.3em 5px;
+	border: 1px solid @gray;
+	width: 200px;
+	margin-left: 5px;
+	.input-inset-shadow;
+	background-color: #fff;
+}
+.c-form input:focus,.c-textarea:focus,.c-form select:focus,.c-select:focus,.c-input:focus {
+	outline:none;
+	border-color: @primary;
+}
+.c-form select,.c-select {
+	padding:.3em 5px;
+	border: 1px solid @gray;
+	width: 150px;
+	margin-left: 5px;
+	background-color: #fff;
+}
+.c-form label,.c-lable {
+	padding:.3em 5px;
+}
+.c-checkbox {
+	cursor: pointer;
+}
+.c-form input[type="checkbox"],.c-checkbox input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	display: none;
+}
+.c-form input[type="checkbox"]+span,.c-checkbox input[type="checkbox"]+span {
+	background-color: #fff;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 3px solid @gray;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.c-form input[type="checkbox"]:checked+span,.c-checkbox input[type="checkbox"]:checked+span {
+	border-color: @primary;
+}
+.c-form input[type="checkbox"]:checked+span:before,.c-checkbox input[type="checkbox"]:checked+span:before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	display: block;
+	margin:2px;
+	background-color: @primary;
+}
+.c-radio {
+	cursor: pointer;
+}
+.c-form input[type="radio"],.c-checkbox input[type="radio"] {
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	display: none;
+}
+.c-form input[type="radio"]+span,.c-checkbox input[type="radio"]+span {
+	background-color: #fff;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 3px solid @gray;
+	vertical-align: middle;
+	margin-top: -2px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.c-form input[type="radio"]:checked+span,.c-checkbox input[type="radio"]:checked+span {
+	border-color: @primary;
+}
+.c-form input[type="radio"]:checked+span:before,.c-checkbox input[type="radio"]:checked+span:before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	display: block;
+	margin:2px;
+	background-color: @primary;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.c-form textarea,.c-textarea {
+	padding:.3em 5px;
+	background-color: #fff;
+	border: 1px solid @gray;
+	width: 150px;
+	margin-left: 5px;
+	min-width: 200px;
+	min-height: 50px;
+	width:550px;
+	.input-inset-shadow
+}
+
+
+/********************** * CUI function **********************/
+.c-btn-func(@color: #000) {
+	background-color:@color ;
+	color:#fff;
+	border:1px solid  @color!important;
+	&:active {
+	    background-color: darken(@color,5%)
+    }
+}
+.box-shadow(@op:.2) {
+	box-shadow:0 1px 5px rgba(0,0,0,@op)
+}
+.nav-func(@color:#000) {
+    background-color: lighten(@color, 2%);
+	h4 {
+	    color:@gray
+    };
+	a {
+	    color:@gray;
+        &.active,&:hover {
+            color:#fff;
+            background-color: @color
+        }
+    };
+	li.active,li:hover {
+        color:#fff;
+        background-color:@color
+    };
+	ul li ul {
+	    background-color: lighten(@color, 10%);
+    }
+}
+
+/********************** * CUI button **********************/
+.c-btn:disabled {
+	background-color:lighten( @gray ,5%)!important;
+	border: 1px solid @gray !important;
+	color:#999 !important;
+	cursor: not-allowed;
+}
+.c-btn-sm {
+	padding:.2em 15px !important;
+	font-size: 12px!important;
+}
+.c-btn-group .c-btn:nth-child(1) {
+	border-left-width:1px
+}
+.c-btn-group .c-btn:nth-last-child(1) {
+	border-right-width:1px
+}
+.c-btn {
+	padding:.3em 15px;
+	border: 1px solid @gray;
+	cursor: pointer;
+	.btn-inset-shadow
+}
+.c-btn:focus {
+	outline:none;
+}
+.c-btn:active {
+	background-color: lighten(@primary,72%)
+}
+.c-btn-primary {
+	.c-btn-func(@primary)
+}
+.c-btn-success {
+	.c-btn-func(@success)
+}
+.c-btn-danger {
+	.c-btn-func(@danger)
+}
+.c-btn-link {
+	color:@primary;
+	border:none;
+	text-decoration: underline
+}
+.c-btn-group .c-btn {
+	border-right-width: 0;
+	border-left-width: 0;
+}
+
+
+/********************** * CUI tag **********************/
+.c-tag {
+	padding: .2em .3em;
+	background-color:lighten(@gray, 5%);
+	color:#000;
+	margin:0 .2em;
+	border-radius: 2px;
+}
+.c-tag.c-bg-danger {
+	color:@danger
+}
+.c-tag.c-bg-success {
+	color:@success
+}
+
+
+/********************** * CUI component **********************/
+.a-padding {
+	padding:0 25px
+};
+.c-nav {
+    background-color: lighten(@gray, 8%);
+    position: relative;
+    .c-clear;
+    .c-borderB;
+	.btn-inset-shadow;
+	height: 40px;
+	line-height: 40px;
+	h4 {
+		line-height: 40px;
+		padding: 0 10px;
+		float: left;
+    };
+    .c-btn,.c-input,.c-form select, .c-select,input{
+		display:inline-block;
+		vertical-align: middle;
+		margin-top: 4px;
+	}
+}
+.c-nav ul {
+	width:auto;
+    margin-right: auto;
+    float: left;
+}
+.c-nav ul li {
+	float: left;
+	position: relative;
+	&:hover ul {
+	    display: block;
+    }
+    &.active,&:hover {
+	background-color: lighten(@gray, 3%);
+    }
+}
+.c-nav ul li a {
+	display: block;
+	color:#333;
+	text-decoration: none;
+    color:#000;
+    .a-padding;
+	&.active {
+	    .c-font-b
+    };
+}
+.c-nav.dark{.nav-func()}
+.c-nav ul li ul {
+	width: 100%;
+	height:auto;
+	position:absolute;
+	background-color: lighten(@gray, 8%);
+	.box-shadow(.3);
+	display: none;
+	z-index:2
+}
+.c-nav ul li ul li {
+	float: none;
+}

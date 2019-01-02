@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CUI Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet/less" type="text/css" href="cui.less?v1.0" />
+    <script src="less.js?v2.5.3"></script>
+    
+</head>
+<body>
+<header class="c-col12 c-borderB header c-flex c-flex-justify">
+    <h2 class="c-col3 c-textIndent-10" >CUI <span class="c-h6 c-font-clearb">极简、易用的CSS样式库</span></h2>
+</header>
+<table width="90%" class="c-table c-text-c c-margin-c c-table-nocolborder c-table-hover">  
+    <caption>  
+        <h3>车间能源消耗比例</h3>  
+    </caption>  
+    <thead>  
+        <tr>  
+            <th>  
+                车间  
+            </th>  
+            <th>  
+                产量  
+            </th>  
+            <th>  
+                电量  
+            </th>  
+            <th>  
+                单耗  
+            </th>  
+        </tr>  
+    </thead> 
+    <tbody>  
+    <tr>  
+        <td>  
+            109  
+        </td>  
+        <td>  
+            13  
+        </td>  
+        <td>  
+            1.34  
+        </td>  
+        <td>  
+            213  
+        </td>  
+    </tr>  
+    <tr>  
+        <td>  
+            109  
+        </td>  
+        <td>  
+            13  
+        </td>  
+        <td>  
+            1.34  
+        </td>  
+        <td>  
+            213  
+        </td>  
+    </tr>  
+    
+    <tr>  
+        <td>  
+            109  
+        </td>  
+        <td>  
+            13  
+        </td>  
+        <td>  
+            1.34  
+        </td>  
+        <td>  
+            213  
+        </td>  
+    </tr>  
+    <tbody>
+</table>  
+
+<div class="c-flex c-margin-t15 c-form c-flex-wrap c-flex-center c-col12">
+    <label class="c-font-b">姓名：</label>
+    <input type="text" class="c-input c-transition" disabled/>
+    <input type="password" class="c-input c-transition"/>
+    <select class="c-transition c-select"><option>Select</option></select>
+</div>
+<div class="c-flex c-margin-t15 c-form c-flex-center c-col12">
+    <label class="c-font-b">想干啥：</label>
+    <label class="c-checkbox"><input type="checkbox" disabled/><span></span> 吃</label>
+    <label class="c-checkbox"><input type="checkbox"/><span></span> 喝</label>
+    <label class="c-font-b">性别：</label>
+    <label class="c-radio"><input type="radio" name="1"/><span></span> 吃</label>
+    <label class="c-radio"><input type="radio" name="1"/><span></span> 喝</label>
+</div>
+<div class="c-flex c-margin-t15 c-form c-flex-center c-col12">
+    <label class="c-font-b">内容：</label>
+    <textarea class="c-textarea"></textarea>
+</div>
+<div class="c-flex c-margin-t15 c-form c-flex-center c-col12">
+    <button class="c-btn">按钮</button>
+    <div class="c-margin-l5 c-btn c-btn-primary">首选项</div>
+    <button disabled class="c-margin-l5 c-btn c-btn-success">禁用</button>
+    <button class="c-margin-l5 c-btn c-btn-success">成功</button>
+    <button class="c-margin-l5 c-btn c-btn-danger">危险</button>
+    <button class="c-margin-l5 c-btn c-btn-link">链接</button>
+</div>
+<div class="c-flex c-margin-t15 c-form c-flex-center c-col12">
+    <button class="c-btn c-btn-sm">按钮</button>
+    <div class="c-margin-l5 c-btn-sm c-btn c-btn-primary">首选项</div>
+    <button disabled class="c-margin-l5 c-btn-sm c-btn c-btn-success">禁用</button>
+    <button class="c-margin-l5 c-btn-sm c-btn c-btn-success">成功</button>
+    <button class="c-margin-l5 c-btn-sm c-btn c-btn-danger">危险</button>
+    <button class="c-margin-l5 c-btn-sm c-btn c-btn-link">链接</button>
+    <button class="c-margin-l5 c-btn-sm c-btn c-btn-w">注意</button>
+</div>
+<div class="c-flex c-margin-t15 c-btn-group c-form c-flex-center c-col12">
+    <button class="c-btn">按钮</button>
+    <div class="c-btn c-btn-primary">首选项</div>
+    <button class="c-btn" disabled>按钮</button>
+    <button class="c-btn c-btn-danger">危险</button>
+</div>
+<div class="c-text-c c-margin-t15">这是CUI的tag样式<span class="c-tag">标签</span>
+    使用<span class="c-tag">.c-tag</span>标识终点的使用<span class="c-tag c-bg-danger">.c-tag .c-bg-danger</span>
+    ，需要标识成功或者正常的时候使用<span class="c-tag c-bg-success">.c-tag .c-bg-success</span>
+</div>
+<div class="c-nav c-col9 c-margin-c c-margin-t15">
+    <h4>LOGO</h4>
+    <ul class="c-margin-l5">
+        <li><a class="active" href="#">首页</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">案例</a>
+            <ul>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">案例</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </li>
+        <li><a href="#">联系</a></li>
+    </ul>
+    <button class="c-btn c-fr c-margin-r5 c-btn-primary">搜索</button>
+    <input type="text" class="c-input c-fr"/>
+    
+</div>
+
+<div class="c-nav dark c-col9 c-margin-c c-margin-t15">
+    <h4>LOGO</h4>
+    <ul class="c-margin-l5">
+        <li><a class="active" href="#">首页</a></li>
+        <li><a href="#">产品</a>
+            <ul>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">案例</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </li>
+        <li><a href="#">案例</a></li>
+        <li><a href="#">联系</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">案例</a></li>
+    </ul>
+    <input type="text" class="c-input c-margin-r5 c-fr"/>
+</div>
+
+<div class="c-nav c-nav-slider c-col9 c-margin-c c-margin-t15">
+    <h4>LOGO</h4>
+    <ul class="c-margin-l5">
+        <li><a class="active" href="#">首页</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">案例</a>
+            <ul>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">案例</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </li>
+        <li><a href="#">联系</a></li>
+    </ul>
+</div>
+</body>
+</html>
